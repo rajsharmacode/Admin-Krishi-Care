@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purpleall"
+    tools:context=".Fullcultivation">
+
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!--        <LinearLayout-->
+            <!--            android:id="@+id/linearLayout5"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="65dp"-->
+            <!--            android:background="#5C00FF"-->
+            <!--            android:orientation="horizontal"-->
+            <!--            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--            app:layout_constraintStart_toStartOf="parent"-->
+            <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+            <!--            <ImageButton-->
+            <!--                android:id="@+id/userbackbtn"-->
+            <!--                android:layout_width="50dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:background="#5C00FF"-->
+            <!--                android:src="@drawable/white_back_arro"-->
+            <!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:text="Cultivation Tips"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:textSize="28dp" />-->
+
+            <!--        </LinearLayout>-->
+
+            <ImageView
+                android:id="@+id/culresimg"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/abc"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/culresimg">
+
+
+                <!--            <androidx.cardview.widget.CardView-->
+                <!--                android:id="@+id/cardView4"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="200dp"-->
+                <!--                android:layout_margin="20dp"-->
+                <!--                android:elevation="5dp"-->
+                <!--                app:cardCornerRadius="30dp"-->
+                <!--                app:cardElevation="5dp"-->
+                <!--                app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                app:layout_constraintStart_toStartOf="parent"-->
+                <!--                app:layout_constraintTop_toTopOf="parent">-->
+
+                <!--               -->
+
+                <!--            </androidx.cardview.widget.CardView>-->
+
+                <TextView
+                    android:id="@+id/culrestitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="28dp"
+                    android:text="Oil Palm"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.551"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/culresdisc"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:text="Oil palm cultivation is a sig \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nificant agricultural practice primarily conducted in tropical regions, particularly in Southeast Asia, Africa, and parts of Latin America. Here's an overview of oil palm cultivation in detail:any existing vegetation, leveling the terrain, and often draining swampy areas to ensure proper water management."
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+                </ScrollView>
+
+
+                <!--            <Button-->
+                <!--                android:id="@+id/culresupdate"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_gravity="center"-->
+                <!--                android:layout_marginTop="0dp"-->
+                <!--                android:text="Update" />-->
+
+                <!--            <Button-->
+                <!--                android:id="@+id/culresdelete"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginTop="10dp"-->
+                <!--                android:layout_gravity="center"-->
+                <!--                android:text="Delete" />-->
+
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/skyblue"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <Button
+                    android:id="@+id/culresupdate"
+                    android:layout_width="152dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:text="Update"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/culresdelete"
+                    android:layout_width="152dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:text="Delete"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/cardView4"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:layout_margin="20dp"-->
+<!--                android:elevation="5dp"-->
+<!--                app:cardCornerRadius="30dp"-->
+<!--                app:cardElevation="5dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/culresimg"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/abc" />-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/culrestitle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="15dp"-->
+<!--                android:layout_marginTop="28dp"-->
+<!--                android:text="uyugviu"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="25dp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.551"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/cardView4" />-->
+
+<!--            <ScrollView-->
+<!--                android:layout_width="376dp"-->
+<!--                android:layout_height="313dp">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/culresdisc"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="15dp"-->
+<!--                    android:text="Oil palm cultivation is a significant agricultural practice primarily conducted in tropical regions, particularly in Southeast Asia, Africa, and parts of Latin America. Here's an overview of oil palm cultivation in detail:any existing vegetation, leveling the terrain, and often draining swampy areas to ensure proper water management."-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20dp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintHorizontal_bias="0.31"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/fullreadtext"-->
+<!--                    app:layout_constraintVertical_bias="0.088" />-->
+<!--            </ScrollView>-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/culresupdate"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="0dp"-->
+<!--                android:text="Update" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/culresdelete"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:text="Delete" />-->
+
+
+<!--        </LinearLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="#1E000000"
+    android:elevation="5dp"
+    android:padding="18dp"
+    app:cardCornerRadius="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/comentimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/img" />
+
+                <!--            <ImageView-->
+                <!--                android:id="@+id/deletepost"-->
+                <!--                android:layout_width="50dp"-->
+                <!--                android:layout_height="50dp"-->
+                <!--                android:layout_marginEnd="28dp"-->
+                <!--                android:src="@drawable/delete"-->
+                <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--                app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                app:layout_constraintTop_toTopOf="parent"-->
+                <!--                app:layout_constraintVertical_bias="0.126" />-->
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="50dp"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#D1D1D1"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                    app:layout_constraintHorizontal_bias="0.045"
+                    app:layout_constraintStart_toStartOf="@+id/imageView2"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+                    <ImageView
+                        android:id="@+id/personimage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/round_person_24" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/commproname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="18dp"
+                    android:text="unkown"
+                    android:textColor="#2B14FF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                    app:layout_constraintHorizontal_bias="0.085"
+                    app:layout_constraintStart_toEndOf="@+id/cardView"
+                    tools:layout_editor_absoluteY="248dp" />
+            </LinearLayout>
+
+            <!--    <View-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:background="@color/gray"-->
+            <!--        android:layout_height="1dp"/>-->
+
+            <TextView
+                android:id="@+id/cometquestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="3dp"
+                android:text="Help identifing problem with My Brinjal"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/cometdisc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:padding="3dp"
+                android:text="disc"
+                android:textColor="#323232"
+                android:textSize="19dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_wrapBehaviorInParent="vertical_only" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#C3C3C3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
+
+                <!--            <CheckBox-->
+                <!--                android:id="@+id/like"-->
+                <!--                android:layout_width="48dp"-->
+                <!--                android:layout_height="48dp"-->
+                <!--                android:layout_marginLeft="10dp"-->
+                <!--                android:button="@drawable/likeunlike"/>-->
+                <!--            <TextView-->
+                <!--                android:id="@+id/commcounter"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginTop="0dp"-->
+                <!--                android:layout_marginLeft="10dp"-->
+                <!--                android:text="0"-->
+                <!--                android:textColor="#323232"-->
+                <!--                android:textSize="19dp"-->
+                <!--                android:padding="3dp" />-->
+
+                <!--            <ImageButton-->
+                <!--                android:id="@+id/comment"-->
+                <!--                android:layout_width="48dp"-->
+                <!--                android:layout_height="48dp"-->
+                <!--                android:layout_marginLeft="25dp"-->
+                <!--                android:background="@color/white"-->
+                <!--                android:src="@drawable/icons_message"-->
+                <!--                tools:ignore="SpeakableTextPresentCheck" />-->
+                <!--            <TextView-->
+                <!--                android:id="@+id/comentcounter"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginTop="0dp"-->
+                <!--                android:layout_marginLeft="10dp"-->
+                <!--                android:text="0"-->
+                <!--                android:textColor="#323232"-->
+                <!--                android:textSize="19dp"-->
+                <!--                android:padding="3dp" />-->
+
+                <!--            <ImageButton-->
+                <!--                android:id="@+id/ib_more"-->
+                <!--                android:layout_width="48dp"-->
+                <!--                android:layout_height="48dp"-->
+                <!--                android:layout_marginLeft="200dp"-->
+                <!--                android:background="@color/white"-->
+                <!--                android:src="@drawable/icons_more"-->
+                <!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+                <Button
+                    android:id="@+id/reporteditbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="Reported Post Delete" />
+
+                <Button
+                    android:id="@+id/reportcancelbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="Remove Cart" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/commquestion"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:text="Help identifing problem with My Brinjal"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textSize="50dp" />-->
+        <!--        <ImageView-->
+        <!--                        android:id="@+id/personimage1"-->
+        <!--                        android:layout_width="match_parent"-->
+        <!--                        android:layout_height="match_parent"-->
+        <!--                        android:src="@drawable/round_person_24"/>-->
+
+
+</androidx.cardview.widget.CardView>

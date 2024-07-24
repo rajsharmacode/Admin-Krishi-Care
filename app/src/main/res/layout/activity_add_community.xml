@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ritesh.AddCommunityActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:background="#9C27B0">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/white_back"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Create a post"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latest Update"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is latest update for the users?"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="serif-monospace"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edt_addUpdate"
+        android:layout_width="390dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:hint="Add update here"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/note"
+        android:paddingLeft="10dp"
+        android:inputType="textMultiLine"
+        android:drawablePadding="10dp"
+        android:background="@drawable/custom_edittext"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose image:"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"/>
+
+    <FrameLayout
+        android:layout_width="390dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/img_choose_btn"
+            android:layout_width="390dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pick_img"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ProgressBar
+            android:id="@+id/P_bar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_comm_post"
+        android:layout_width="390dp"
+        android:layout_height="55dp"
+        android:text="Post"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_buttton"
+        android:layout_marginTop="140dp"/>
+
+
+
+</LinearLayout>

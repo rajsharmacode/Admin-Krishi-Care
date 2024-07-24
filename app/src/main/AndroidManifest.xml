@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Admin"
+        tools:targetApi="31">
+        <activity
+            android:name=".NotificationPage"
+            android:exported="false" />
+        <activity
+            android:name=".BannerAdePage"
+            android:exported="false" />
+        <activity
+            android:name=".ContactUsPage"
+            android:exported="false" />
+        <activity
+            android:name=".ReportFullPage"
+            android:exported="false" />
+        <activity
+            android:name=".ReportCommPage"
+            android:exported="false" />
+        <activity
+            android:name=".UserAddinFirebaseOtp"
+            android:exported="false" />
+        <activity
+            android:name=".UserAddinFirebaseNumber"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3333"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".OrderCompleteFullPage"
+            android:exported="false" />
+        <activity
+            android:name=".OrderStatusFullPage"
+            android:exported="false" />
+        <activity
+            android:name=".OrderCompletePage"
+            android:exported="false" />
+        <activity
+            android:name=".OrderStatus"
+            android:exported="false" />
+        <activity
+            android:name=".InsertCropPractices"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateCropPractices"
+            android:exported="false" />
+        <activity
+            android:name=".FullCropPractices"
+            android:exported="false" />
+        <activity
+            android:name=".CropPracticesPage"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateCaltivation"
+            android:exported="false" />
+        <activity
+            android:name=".Fullcultivation"
+            android:exported="false" />
+        <activity
+            android:name=".InsertCultivation"
+            android:exported="false" />
+        <activity
+            android:name=".CultivationPage"
+            android:exported="false" />
+        <activity
+            android:name=".CropKnowledgePage"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateItem"
+            android:exported="false" />
+        <activity
+            android:name=".InsertItem2222"
+            android:exported="false" />
+        <activity
+            android:name=".InsertItem"
+            android:exported="false"
+            android:label="@string/title_activity_insert_item"
+            android:theme="@style/Theme.Admin" />
+        <activity
+            android:name=".FullitemPage"
+            android:exported="false" />
+        <activity
+            android:name=".ItemPage"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateCategory"
+            android:exported="false" />
+        <activity
+            android:name=".InsertCategory"
+            android:exported="false" />
+        <activity
+            android:name=".ShopCategoryPage"
+            android:exported="false" />
+        <activity
+            android:name=".InsertUserPage"
+            android:exported="false" />
+        <activity
+            android:name=".AddUserdataPage"
+            android:exported="false" />
+        <activity
+            android:name=".UserPage"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity22222"
+            android:exported="true" />
+        <activity
+            android:name=".Ritesh.Demooooooooo"
+            android:exported="false" />
+        <activity
+            android:name=".Ritesh.MessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ritesh.AddCommunityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ritesh.AdminCommunityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ritesh.ProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ritesh.ShopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ritesh.ItemAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ritesh.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Ritesh.CategoryAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ritesh.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ritesh.MainActivity"
+            android:exported="true" >
+
+        </activity>
+    </application>
+
+</manifest>

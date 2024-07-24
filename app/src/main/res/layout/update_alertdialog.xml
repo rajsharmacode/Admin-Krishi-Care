@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/recView_update_edtText_Purl"
+        android:layout_width="400dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:hint="Enter new URL"
+        android:drawableLeft="@drawable/white_url"
+        android:drawablePadding="10dp"
+        android:textColorHint="@color/white"
+        android:background="@drawable/custom_buttton"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/recView_update_edtText_Categoryname"
+        android:layout_width="400dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/white_category"
+        android:drawablePadding="10dp"
+        android:hint="Enter new Category Name"
+        android:textColorHint="@color/white"
+        android:background="@drawable/custom_buttton"
+        android:paddingLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cancel_btn_recView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_buttton"
+            android:text="Cancel"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/update_btn_recView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_buttton"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:layout_marginLeft="100dp"/>
+
+    </LinearLayout>
+</LinearLayout>

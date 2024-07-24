@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertUserPage">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userinsertimg"
+        android:layout_width="155dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/img"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/userinsertimg">
+
+
+        <ImageView
+            android:id="@+id/name_icon"
+            android:layout_width="121dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/profile_name_icon" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <EditText
+            android:id="@+id/userinsertname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="  Enter Your Name"
+            android:textSize="25dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <TextView
+            android:id="@+id/txt6"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="+91"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000" />
+
+        <EditText
+            android:id="@+id/userinsertnumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="  Enter Your Number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/userinsertbtn"
+        android:layout_width="211dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="100dp"
+        android:text="Save Changes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.244" />
+</androidx.constraintlayout.widget.ConstraintLayout>

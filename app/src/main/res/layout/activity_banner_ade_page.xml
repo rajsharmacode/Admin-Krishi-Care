@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/purpleall"
+    android:layout_height="match_parent"
+    tools:context=".BannerAdePage">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#5C00FF"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/userbackbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#5C00FF"
+            android:src="@drawable/white_back_arro"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="Ade Banner"
+            android:textColor="@color/white"
+            android:textSize="28dp" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_margin="17dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:iss_auto_cycle="true"
+            app:iss_delay="0"
+            app:iss_period="1000" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_margin="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView453" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView453"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/pickbannerimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="17dp"
+            android:src="@drawable/pick_img" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            android:layout_width="132dp"
+            android:layout_height="109dp"
+            android:visibility="gone"
+            android:layout_gravity="center" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/changebannerbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Banner"
+        android:layout_margin="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

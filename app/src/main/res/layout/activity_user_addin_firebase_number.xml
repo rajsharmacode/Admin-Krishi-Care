@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/purpleall"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".UserAddinFirebaseNumber">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#5C00FF"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/userbackbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#5C00FF"
+            android:src="@drawable/white_back_arro"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="Add User"
+            android:textColor="@color/white"
+            android:textSize="28dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="95dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/round_person_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:text="Add User"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_your_mobile_number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:text="@string/we_will_send_you_an_one_time_otpon_this_given_mobile_number"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_91"
+                android:textSize="20sp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/enter_mobile_number"
+                android:layout_width="320dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/custom_edit"
+                android:hint="@string/mobile_number"
+                android:textColorHint="#9E000000"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingStart="10dp"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_GetOtp"
+                android:layout_width="375dp"
+                android:layout_height="55dp"
+                android:text="GET OTP"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@drawable/custom_button"/>
+
+            <ProgressBar
+                android:id="@+id/progressbar_sending_otp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+

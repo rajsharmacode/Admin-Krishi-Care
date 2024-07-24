@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#9C27B0">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update details"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Enter image URL"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        android:drawableLeft="@drawable/url"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Enter product name"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        android:drawableLeft="@drawable/name"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Enter product price"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        android:drawableLeft="@drawable/rupee"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Enter product description"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        android:drawableLeft="@drawable/desc"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Update"
+        android:textStyle="bold"
+        android:background="#9C27B0"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+
+
+
+</LinearLayout>

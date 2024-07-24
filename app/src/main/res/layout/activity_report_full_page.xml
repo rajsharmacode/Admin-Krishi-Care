@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportFullPage">
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <!--        <LinearLayout-->
+            <!--            android:id="@+id/linearLayout5"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="50dp"-->
+            <!--            android:orientation="horizontal"-->
+            <!--            android:background="@color/maintoolbaar"-->
+
+            <!--            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--            app:layout_constraintStart_toStartOf="parent"-->
+            <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+            <!--            <ImageButton-->
+            <!--                android:id="@+id/cometback"-->
+            <!--                android:layout_width="50dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:background="@color/maintoolbaar"-->
+            <!--                android:src="@drawable/white_back_arro"-->
+            <!--                tools:ignore="SpeakableTextPresentCheck" />-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:text="Post"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:textSize="28dp" />-->
+
+            <!--        </LinearLayout>-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+
+                <ImageView
+                    android:id="@+id/comentimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/img" />
+                <ImageButton
+                    android:id="@+id/cometback"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/back"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="5dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="50dp"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#D1D1D1"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                    app:layout_constraintHorizontal_bias="0.045"
+                    app:layout_constraintStart_toStartOf="@+id/imageView2"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+                    <ImageView
+                        android:id="@+id/cometpersonimage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/round_person_24" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/cometpersonname"
+                    android:layout_width="134dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Unknown"
+                    android:textColor="#2B14FF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                    app:layout_constraintHorizontal_bias="0.085"
+                    app:layout_constraintStart_toEndOf="@+id/cardView"
+                    tools:layout_editor_absoluteY="248dp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/cometquestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="3dp"
+                android:text="Help identifing problem with My Brinjal"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/cometdisc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:padding="3dp"
+                android:text="@string/description"
+                android:textColor="#323232"
+                android:textSize="19dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_wrapBehaviorInParent="vertical_only" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/cometlike"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:button="@drawable/likeunlike"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/cometcounter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="0"
+                        android:textColor="#323232"
+                        android:textSize="19dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/cometlike"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/cometcomment"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@color/white"
+                        android:src="@drawable/icons_message"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/cometcounter"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:id="@+id/cometcountercomment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="0"
+                        android:textColor="#323232"
+                        android:textSize="19dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/cometcomment"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/cometeditbtn"-->
+<!--                        android:layout_width="48dp"-->
+<!--                        android:layout_height="48dp"-->
+<!--                        android:layout_marginEnd="0dp"-->
+<!--                        android:src="@drawable/hiipencil"-->
+<!--                        android:background="@color/white"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintEnd_toStartOf="@+id/commetmenuitem"-->
+<!--                        app:layout_constraintTop_toTopOf="parent"-->
+<!--                        tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/commetmenuitem"-->
+<!--                        android:layout_width="48dp"-->
+<!--                        android:layout_height="48dp"-->
+<!--                        android:background="@color/white"-->
+<!--                        android:src="@drawable/icons_more"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent"-->
+<!--                        tools:ignore="SpeakableTextPresentCheck" />-->
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:background="#DDDDDD"
+                android:text="    Comments"/>
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#DDDDDD"
+            app:layout_constraintBottom_toTopOf="@+id/cardView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.0">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/sendedittext"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/lavender_border"
+                    android:hint="Type here"
+                    android:layout_marginLeft="15dp"
+                    android:paddingLeft="10dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/sendbtn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/sendbtn"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="end"
+                    android:layout_margin="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/custom_send_button"
+                    android:src="@drawable/send"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!--    <EditText-->
+        <!--        android:layout_width="307dp"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:ems="10"-->
+        <!--        android:inputType="textMultiLine"-->
+        <!--        android:text="Name"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintHorizontal_bias="0.0"-->
+        <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+        <!--    <Button-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginStart="27dp"-->
+        <!--        android:text="Send"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toEndOf="@+id/sendedittext" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
