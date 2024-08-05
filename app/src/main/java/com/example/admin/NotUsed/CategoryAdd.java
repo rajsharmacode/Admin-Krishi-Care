@@ -1,4 +1,4 @@
-package com.example.admin.Ritesh;
+package com.example.admin.NotUsed;
 
 public class CategoryAdd {
     String categoryName;

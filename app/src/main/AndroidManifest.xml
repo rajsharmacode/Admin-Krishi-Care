@@ -118,28 +118,28 @@
             android:name=".MainActivity22222"
             android:exported="true" />
         <activity
-            android:name=".Ritesh.Demooooooooo"
+            android:name=".NotUsed.Demooooooooo"
             android:exported="false" />
         <activity
-            android:name=".Ritesh.MessageActivity"
+            android:name=".NotUsed.MessageActivity"
             android:exported="false" />
         <activity
-            android:name=".Ritesh.AddCommunityActivity"
+            android:name=".NotUsed.AddCommunityActivity"
             android:exported="false" />
         <activity
-            android:name=".Ritesh.AdminCommunityActivity"
+            android:name=".NotUsed.AdminCommunityActivity"
             android:exported="false" />
         <activity
-            android:name=".Ritesh.ProductsActivity"
+            android:name=".NotUsed.ProductsActivity"
             android:exported="false" />
         <activity
-            android:name=".Ritesh.ShopActivity"
+            android:name=".NotUsed.ShopActivity"
             android:exported="false" />
         <activity
-            android:name=".Ritesh.ItemAddActivity"
+            android:name=".NotUsed.ItemAddActivity"
             android:exported="false" />
         <activity
-            android:name=".Ritesh.SplashActivity"
+            android:name=".NotUsed.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -148,13 +148,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Ritesh.CategoryAddActivity"
+            android:name=".NotUsed.CategoryAddActivity"
             android:exported="false" />
         <activity
-            android:name=".Ritesh.HomeActivity"
+            android:name=".NotUsed.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".Ritesh.MainActivity"
+            android:name=".NotUsed.MainActivity"
             android:exported="true" >
 
         </activity>

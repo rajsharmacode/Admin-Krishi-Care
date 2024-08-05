@@ -1,4 +1,4 @@
-package com.example.admin.Ritesh;
+package com.example.admin.NotUsed;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.admin.MainActivity3333;
 import com.example.admin.R;
 
 public class SplashActivity extends AppCompatActivity {
